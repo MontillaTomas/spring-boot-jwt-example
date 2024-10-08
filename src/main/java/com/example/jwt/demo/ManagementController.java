@@ -9,15 +9,15 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/api/v1/demo")
-public class DemoController {
+@RequestMapping("/api/v1/management")
+public class ManagementController {
     @GetMapping
-    public ResponseEntity<Map<String, String>> demo() {
-        return ResponseEntity.ok(Map.of("message", "GET: This is a secured endpoint!"));
+    public ResponseEntity<Map<String, String>> get() {
+        return ResponseEntity.ok(Map.of("message", "GET: This is an management endpoint!"));
     }
 
     @PostMapping
-    public ResponseEntity<Map<String, String>> demoPost() {
-        return ResponseEntity.ok(Map.of("message", "POST: This is a secured endpoint!"));
+    public ResponseEntity<Map<String, String>> post() {
+        return ResponseEntity.ok(Map.of("message", "POST: This is an management endpoint!"));
     }
 }

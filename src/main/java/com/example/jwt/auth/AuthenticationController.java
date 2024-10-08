@@ -1,5 +1,6 @@
 package com.example.jwt.auth;
 
+import jakarta.annotation.security.PermitAll;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
